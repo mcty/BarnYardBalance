@@ -1,0 +1,5 @@
+[15-Nov-2017 23:33:57 UTC] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'barnyardbalance' in /home/ubuntu/workspace/BarnYardBalance/server.php on line 21
+[15-Nov-2017 23:33:57 UTC] PHP Stack trace:
+[15-Nov-2017 23:33:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/BarnYardBalance/login.php:0
+[15-Nov-2017 23:33:57 UTC] PHP   2. include() /home/ubuntu/workspace/BarnYardBalance/login.php:16
+[15-Nov-2017 23:33:57 UTC] PHP   3. mysqli_connect() /home/ubuntu/workspace/BarnYardBalance/server.php:21
