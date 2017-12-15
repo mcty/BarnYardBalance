@@ -31,7 +31,7 @@
         <body>
 
             <div>
-                <img src="assets/login.jpg" width="1280" height="720" alt="login" usemap="#loginmap">
+                <img src="assets/login/login.jpg" width="1280" height="720" alt="login" usemap="#loginmap">
                 <map name="loginmap">
                 <area shape="rect" coords="596,304,689,334" alt="Login" nohref onClick="document.getElementById('id01').style.display='block'">
                 </map>
@@ -43,15 +43,15 @@
                     <!-- <?php include('errors.php'); ?> -->
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                        <img src="assets/corn.jpg" alt="Avatar" class="avatar">
+                        <img src="assets/login/corn.jpg" alt="Avatar" class="avatar">
                     </div>
 
                     <div class="input-group">
                         <label>Username</label>
-                        <input type="text" name="username">
+                        <input type="text" name="username" placeholder="Username" required>
 
                         <label>Password</label>
-                        <input type="password" name="password">
+                        <input type="password" name="password" placeholder="Password" required>
 
                         <button type="submit" class="btn" name="login_user">Login</button>
 

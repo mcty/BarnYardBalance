@@ -25,16 +25,24 @@
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+   <title>BarnYardBalance</title>
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="gameFramework.js"></script>
+	<script type="text/javascript" src="barnyardbalance.js"></script>
+	<style>
+	     html, body {
+	         font-family: "Press Start 2P", cursive;
+	     }
+	</style>
 </head>
 
 <body>
-    <div class="header">
-        <h2>Home Page</h2>
-    </div>
+    <div
+    id="game" style="position: relative; width: 1280px; height: 720px; overflow: hidden">
+	</div>
+	
     <div class="content">
 
         <!-- notification message -->
@@ -55,7 +63,7 @@
         <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
         <?php endif ?>
     </div>
-
+    
 </body>
 
 </html>

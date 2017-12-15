@@ -14,6 +14,7 @@ session_start();
 // variable declaration
 $username = "";
 $email    = "";
+$admin    = "";
 $errors = array(); 
 $_SESSION['success'] = "";
 
@@ -64,17 +65,25 @@ if (isset($_POST['login_user'])) {
 
 	if (count($errors) == 0) {
 		$password = $password;
-		$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+		$query = "SELECT * FROM users WHERE username='$username' AND password='$password' AND admin='$admin'";
 		$results = mysqli_query($db, $query);
 
 		if (mysqli_num_rows($results) == 1) {
+			//check if admin
 			$_SESSION['username'] = $username;
+			$_SESSION['admin'] = $admin;
 			$_SESSION['success'] = "You are now logged in";
-			header('location: index.php');
+			if($admin == '1') {
+				header('location: home.php');
+			}
+			else{
+				header('location: index.php');
+			}
 		}else {
 			array_push($errors, "Wrong username/password combination");
 		}
 	}
 }
+
 
 ?>

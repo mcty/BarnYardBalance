@@ -18,8 +18,12 @@ Welcome.
 
 4)Ensure that the sql database is started before testing or going into phpmyadmin
 
+5)Remember to export database if modified. Move the old db to old under database_export and
+drag new db into the folder
 
 ## Support & Documentation
 
 Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
 To watch some training videos, visit http://www.youtube.com/user/c9ide
+
+ppt:  https://docs.google.com/presentation/d/1nVdDPQWZ9GdQTOPhtNyNlD2X8dDA_lz4sVgw2p09OUU/edit?usp=sharing
